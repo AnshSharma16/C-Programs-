@@ -1,0 +1,99 @@
+#include<stdio.h>
+#include<math.h>
+#include<conio.h>
+
+int main()
+{
+    float a,b;
+    char operator;
+    printf("Enter Operator:[+,-,/,*,p(for power), t for tan, r for square root, s for sine, c for cosine, l forlogarithmic,e for exponential]");
+    scanf("%c",&operator);
+    float result;
+    
+    switch(operator){
+     
+    case '+':
+    printf("Enter numbers:\n");
+    scanf("%f %f",&a,&b);
+    result=a+b;
+    printf("\n%f",result);
+    break;
+    
+    case '-':
+    printf("Enter numbers:\n");
+    scanf("%f %f",&a,&b);
+    result=a-b;
+    printf("\n%f",result);
+    break;
+    
+    case 'p':
+    printf("Enter numbers:\n");
+    scanf("%f %f",&a,&b);
+    result=pow(a,b);
+    printf("\n%f",result);
+    break;
+  
+    case 'r':
+    printf("Enter number:\n");
+    scanf("%f",&a);
+    result=sqrt(a);
+    printf("%f\n",result);
+    break;
+   
+    case '*':
+    printf("Enter the numbers such that a^b:\n");
+    scanf("%f %f",&a,&b);
+    result=a*b;
+    printf("%f\n",result);
+    break;
+    
+    case '/':
+    printf("Enter the numbers;\n");
+    scanf("%f %f",&a,&b);
+    result=a/b;
+    printf("%f\n",result);
+    break;
+    
+    case 'l':
+    printf("Enter the numbers:\n");
+    scanf("%f",&a);
+    result=log(a);
+    printf("%f\n",result);
+    break;
+   
+    case 's':
+    printf("Enter the angle in radians:\n");
+    scanf("%f",&a);
+    result=sin(a);
+    printf("%f\n",result);
+    break;
+    
+    case 'c':
+    printf("Enter the angle in radians:\n");
+    scanf("%f",&a);
+    result=cos(a);
+    printf("%f\n",result);
+    break;
+    
+    case 't':
+    printf("Enter the angle in radians:\n");
+    scanf("%f",&a);
+    result=tan(a);
+    printf("%f\n",result);
+    break;
+    
+    case 'e':
+    printf("Enter e^:\n");
+    scanf("%f",&a);
+    result=exp(a);
+    printf("%f\n",result);
+    break;
+    
+    default:
+    printf("Invalid operator!");
+    
+    
+    }
+ 
+    return 0;
+}
