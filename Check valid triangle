@@ -1,0 +1,97 @@
+#include<stdio.h>
+
+int main()
+{
+    int t,a,b,c,d,e,f,g,h,i,j,k,l,r1,r2,r3,r4;
+    scanf("%d",&t);
+    
+    switch(t){ 
+   
+    case(1):{
+    scanf("%d %d %d",&a,&b,&c);
+   r1=a+b+c;
+    if(r1==180){
+        printf("YES");}
+        else
+printf("NO");}
+break;
+       
+        case(2):{
+    scanf("%d %d %d %d %d %d",
+    &a,&b,&c,&d,&e,&f);
+    r1=a+b+c;
+   r2=d+e+f;
+if(r1==180){
+printf("YES\n");}
+else
+printf("NO\n");
+    if(r2==180){
+        printf("YES\n");}
+        else
+printf("NO\n");}
+        break;
+              case(3):{
+    scanf("%d %d %d %d %d %d %d %d %d",
+    &a,&b,&c,&d,&e,&f,&g,&h,&i);
+    r1=a+b+c;
+    r2=d+e+f;
+   r3=g+h+i;
+    if(r1==180){
+printf("YES\n");}
+else
+printf("NO\n");
+    if(r2==180){
+        printf("YES\n");}
+        else
+printf("NO\n");
+if(r3==180){
+        printf("YES\n");}
+        else
+printf("NO\n");}
+        break;
+        
+        case(4):{
+    scanf("%d %d %d %d %d %d %d %d %d %d %d %d",
+    &a,&b,&c,&d,&e,&f,&g,&h,&i,&j,&k,&l);
+    r1=a+b+c;
+    r2=d+e+f;
+   r3=g+h+i;
+r4=j+k+l;
+    if(r1==180){
+printf("YES\n");}
+else
+printf("NO\n");
+    if(r2==180){
+        printf("YES\n");}
+        else
+printf("NO\n");
+if(r3==180){
+        printf("YES\n");}
+        else
+printf("NO\n");
+if(r4==180){
+        printf("YES\n");}
+        else
+printf("NO\n");
+}
+        break;
+    
+        
+            
+            
+            
+            
+            
+            
+            
+                 
+    }
+    
+    
+    
+    
+    
+    
+    
+    return 0;
+}
