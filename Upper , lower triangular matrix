@@ -1,0 +1,54 @@
+#include<stdio.h>
+int main() {
+   int rows, cols, r, c, matrix[10][10];
+   clrscr(); /*Clears the Screen*/
+   printf("Please enter the number of rows for the matrix: ");
+   scanf("%d", &rows);
+   printf("
+");
+   printf("Please enter the number of columns for the matrix: ");
+   scanf("%d", &cols);
+   printf("
+");
+   printf("Please enter the elements for the Matrix: 
+");
+   for(r = 0; r < rows; r++){
+      for(c = 0;c < cols;c++){
+         scanf("%d", &matrix[r][c]);
+      }
+   }
+   printf("
+ The Lower Triangular Matrix is: ");
+   for(r = 0; r < rows; r++){
+      printf("
+");
+      for(c = 0; c < cols; c++){
+      if(r >= c){
+         printf("%d\t ", matrix[r][c]);
+      }
+      else{
+         printf("0");
+         printf("\t");
+      }
+   }
+   }
+   printf("
+
+ The Upper Triangular Matrix is: ");
+   for(r = 0; r < rows; r++){
+      printf("
+");
+      for(c = 0; c < cols; c++){
+         if(r > c){
+            printf("0");
+            printf("\t");
+         }
+         else{
+            printf("%d\t ", matrix[r][c]);
+
+         }
+      }
+   }
+   getch();
+   return 0;
+}
